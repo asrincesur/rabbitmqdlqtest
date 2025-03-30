@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: messageservice
+  rabbitmq:
+     host: localhost
+     port: 5672
+     username: admin
+     password: admin
+     virtual-host: /
+     connection-timeout: 5000
+
+
+server:
+  port: 8031
+
+rabbit:
+  QUEUE_NAME: my.queue
+  EXCHANGE_NAME: my.exchange
+  ROUTING_KEY: my.routing.key"
+  DLQ_QUEUE_NAME: dlq.name
+  DLQ_EXCHANGE_NAME: dlq.exchange
+  DLQ_ROUTING_KEY: dlq.routing
+
